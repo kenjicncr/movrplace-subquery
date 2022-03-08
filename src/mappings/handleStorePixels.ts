@@ -55,7 +55,7 @@ export async function handleStorePixels(event: MoonbeamCall<StorePixelArgs>): Pr
   let community = await Community.get(communityId)
 
   if(!community) {
-    community = new Charity(communityId)
+    community = new Community(communityId)
     community.name = communityId
     community.totalPixelsReceived = totalPixelCount
     await community.save()
