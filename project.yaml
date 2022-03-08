@@ -10,7 +10,7 @@ schema:
 
 network:
   genesisHash: '0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b' # Genesis hash of Moonriver
-  endpoint: wss://wss.api.moonriver.moonbeam.network
+  endpoint: wss://moonriver.api.onfinality.io/public-ws
 
   chaintypes:
     file: "./types.yaml"
