@@ -1,0 +1,70 @@
+type Transaction @entity {
+
+  id: ID! # Transaction hash
+
+  value: BigInt!
+
+  to: String!
+
+  from: String!
+
+  contractAddress: String!
+}
+
+type PixelInput @entity {
+  id: ID!
+
+  bucket: Int!
+
+  posInBucket: Int!
+
+  color: Int!
+
+}
+
+type Bucket @entity {
+  id: ID!
+
+  position: Int!
+
+  pixels: [Int!]
+
+  lastBlockUpdated: Int!
+}
+
+type Account @entity {
+  id: ID!
+
+  address: String!
+
+  totalPixelsPlaced: Int!
+}
+
+type Charity @entity {
+  id: ID!
+
+  name: String!
+
+  totalPixelsReceived: Int!
+}
+
+type Community @entity {
+  id: ID!
+
+  name: String!
+
+  totalPixelsReceived: Int!
+}
+
+
+type Approval @entity {
+  id: ID! # Transaction hash
+
+  value: BigInt!
+
+  owner: String!
+
+  spender: String!
+
+  contractAddress: String!
+}

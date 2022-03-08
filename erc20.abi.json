@@ -1,0 +1,306 @@
+[
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "bucket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "posInBucket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint16",
+              "name": "color",
+              "type": "uint16"
+            }
+          ],
+          "indexed": false,
+          "internalType": "struct Bucket2D.pixelInput[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "pixelsCommitted",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "bom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "bucketInternalWrapping",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "bucketWrapping",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "findBucketFromPixelIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "findPosInBucket",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllCommunities",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBucket",
+      "outputs": [
+        {
+          "internalType": "uint16[16]",
+          "name": "",
+          "type": "uint16[16]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "name": "getCommunityTotal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "fromBucket",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFlatBuckets1024",
+      "outputs": [
+        {
+          "internalType": "uint16[16384]",
+          "name": "",
+          "type": "uint16[16384]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "fromBucket",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFlatBuckets256",
+      "outputs": [
+        {
+          "internalType": "uint16[4096]",
+          "name": "",
+          "type": "uint16[4096]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "fromBucket",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFlatBuckets512",
+      "outputs": [
+        {
+          "internalType": "uint16[8192]",
+          "name": "",
+          "type": "uint16[8192]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "fromBucket",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFlatBuckets768",
+      "outputs": [
+        {
+          "internalType": "uint16[12288]",
+          "name": "",
+          "type": "uint16[12288]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "numPixels",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPriceOfPixels",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pixelPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "bucket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "posInBucket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint16",
+              "name": "color",
+              "type": "uint16"
+            }
+          ],
+          "internalType": "struct Bucket2D.pixelInput[]",
+          "name": "pixelInputs",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "string",
+          "name": "_id",
+          "type": "string"
+        }
+      ],
+      "name": "storePixels",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ]
