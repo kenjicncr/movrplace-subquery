@@ -3,7 +3,7 @@ specVersion: "0.2.0"
 name: "Blockplace"
 version: "1.0.0"
 description: "Blockplace Transactions"
-repository: "https://github.com/boostdmg01/moonbeans-bot"
+repository: "https://github.com/kenjicncr/movrplace-subquery"
 
 schema:
   file: "./schema.graphql"
@@ -17,7 +17,7 @@ network:
 
 dataSources:
   - kind: substrate/Moonbeam
-    startBlock: 1567144
+    startBlock: 1567143
     processor:
       file: './node_modules/@subql/contract-processors/dist/moonbeam.js'
       options:

@@ -8,8 +8,8 @@ type BucketArray = {
 
 type StorePixelArgs = [Array<any>] & {
   pixelInputs: Array<any>;
-  _charityId: String;
   _communityId: String;
+  _charityId: String;
 };
 
 export async function handleStorePixels(event: MoonbeamCall<StorePixelArgs>): Promise<void> {
