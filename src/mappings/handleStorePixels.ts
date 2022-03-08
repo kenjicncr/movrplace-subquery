@@ -1,6 +1,5 @@
 import { Account, Bucket, Charity, Community, Transaction } from '../types'
 import { MoonbeamCall } from '@subql/contract-processors/dist/moonbeam';
-import { BigNumber, logger } from "ethers";
 
 type BucketArray = {
   [bucketIndex: number]: number[];
