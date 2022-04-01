@@ -22,7 +22,7 @@ dataSources:
       file: './node_modules/@subql/contract-processors/dist/moonbeam.js'
       options:
         abi: contract
-        address: '0xAad54D79265f7595D433b49DB5C584aA8f5c2186'
+        address: '0xFEf7D59B26F60A253e0cd34850aCa419f16Ebb2E'
     assets:
       contract:
         file: './movrplace.abi.json'
